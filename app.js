@@ -3,8 +3,6 @@ if(process.env.NODE_ENV !== "production"){
 }
 
 // require('dotenv').config();
-
-
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -93,7 +91,7 @@ app.use(
                 "'self'",
                 "blob:",
                 "data:",
-                "https://res.cloudinary.com/douqbebwk/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
+                "https://res.cloudinary.com/douqbebwk/", 
                 "https://images.unsplash.com/",
             ],
             fontSrc: ["'self'", ...fontSrcUrls],
